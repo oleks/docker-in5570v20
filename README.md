@@ -1,4 +1,4 @@
-# An Emerald installation for IN9570v19
+# An Emerald installation for IN5570v19
 
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](LICENSE.md)
 
@@ -11,7 +11,7 @@ docker run \
   --interactive --tty --rm \
   --volume "$(pwd):/home/docker/src/" \
   --workdir "/home/docker/src/" \
-  portoleks/in9570v19:latest
+  portoleks/in5570v19:latest
 ```
 
 You land in a `bash` from where you can run `emc`, `ec`, and `ex`. To
