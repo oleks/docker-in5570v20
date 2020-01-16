@@ -4,7 +4,7 @@
 
 The recommended way to use this Docker image is to go to the directory
 where you have your Emerald code (and not much else!), and run the
-following command:
+following (Linux/macOS) command:
 
 ```
 docker run \
@@ -13,6 +13,21 @@ docker run \
   --workdir "/home/docker/src/" \
   portoleks/in5570v20:latest
 ```
+
+Debunking the given options:
+
+  * `--interactive --tty` make your session interactive, instead of
+    spawning the container in the background (background instantiation
+    might be useful later to start many concurrent Emerald nodes)
+  * `--rm` will make your session ephemeral; that is, anything that
+    happens inside the container, outside otherwise mounted volumes
+    (see below), will not disappear as soon as you exit
+  * `--volume` mounts the current working directory under
+    `/home/docker/src`
+  * `--workdir` makes sure that you spawn with `/home/docker/src` as
+    the working directory
+
+So what happens when you execute this command?
 
 You land in a `bash` from where you can run `emc`, `ec`, and `ex`. To
 gracefully exit from the Docker image, type `exit` or press
