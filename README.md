@@ -21,7 +21,7 @@ Debunking the given options:
     might be useful later to start many concurrent Emerald nodes)
   * `--rm` will make your session ephemeral; that is, anything that
     happens inside the container, outside otherwise mounted volumes
-    (see below), will not disappear as soon as you exit
+    (see below), will disappear as soon as you exit
   * `--volume` mounts the current working directory under
     `/home/docker/src`
   * `--workdir` makes sure that you spawn with `/home/docker/src` as
