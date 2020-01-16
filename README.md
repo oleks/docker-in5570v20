@@ -2,9 +2,9 @@
 
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](LICENSE.md)
 
-The recommended way to use this Docker image is to go to the directory
-where you have your Emerald code (and not much else!), and run the
-following (Linux/macOS) command:
+The slightly long-winded way to use this Docker image is to go to the
+directory where you have your Emerald code (and not much else!), and
+run the following (Linux/macOS) command:
 
 ```
 docker run \
