@@ -1,4 +1,4 @@
-# An Emerald installation for IN5570v19
+# An Emerald installation for IN5570v20
 
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](LICENSE.md)
 
