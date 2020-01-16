@@ -35,6 +35,18 @@ So what happens when you execute this command?
 
 You land in a `bash` from where you can run `emc`, `ec`, and `ex`.
 
+You will see a prompt like:
+
+```
+1331eb6fa70a@172.17.0.2 ~
+$ 
+```
+
+Here, `1331eb6fa70` is the hostname, and `172.17.0.2` is the IP
+address. These will be different for each container you start. This
+should make it easier to work with multiple Docker+Emerald nodes. (The
+username is always `docker`, and it is not shown in the prompt.)
+
 To gracefully exit from the Docker image, type `exit` or press
 `Ctrl`+`D`.
 
