@@ -29,8 +29,9 @@ Debunking the given options:
 
 So what happens when you execute this command?
 
-You land in a `bash` from where you can run `emc`, `ec`, and `ex`. To
-gracefully exit from the Docker image, type `exit` or press
+You land in a `bash` from where you can run `emc`, `ec`, and `ex`.
+
+To gracefully exit from the Docker image, type `exit` or press
 `Ctrl`+`D`.
 
 Please remember that when you exit, everything done outside the
