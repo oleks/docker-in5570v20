@@ -5,6 +5,7 @@ ARG username=docker
 MAINTAINER Oleks <oleks@oleks.info>
 
 COPY emerald-0.99-linux.tar.gz /home/docker/
+COPY .bashrc /home/docker
 
 RUN \
   tar xvf emerald-0.99-linux.tar.gz && \
