@@ -14,8 +14,8 @@ docker run \
   portoleks/in5570v20:latest
 ```
 
-Windows users can use PowerShell, and must backticks (`````) instead
-of backslash (``\``) above.
+Windows users can use PowerShell, and must backticks (\`) instead of
+backslash (\\) above.
 
 Debunking the given options:
 
