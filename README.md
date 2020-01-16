@@ -11,7 +11,7 @@ docker run \
   --interactive --tty --rm \
   --volume "$(pwd):/home/docker/src/" \
   --workdir "/home/docker/src/" \
-  portoleks/in5570v19:latest
+  portoleks/in5570v20:latest
 ```
 
 You land in a `bash` from where you can run `emc`, `ec`, and `ex`. To
