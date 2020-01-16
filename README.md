@@ -6,6 +6,8 @@ The slightly long-winded way to use this Docker image is to go to the
 directory where you have your Emerald code (and not much else!), and
 run the following (Linux/macOS) command:
 
+**NB!** Do not execute before reading the above and the below.
+
 ```
 docker run \
   --interactive --tty --rm \
@@ -14,10 +16,9 @@ docker run \
   portoleks/in5570v20:latest
 ```
 
-Windows users can use PowerShell, and must backticks (\`) instead of
-backslash (\\) above.
+(Windows users; see below)
 
-Debunking the given options:
+## Debunking the options
 
   * `--interactive --tty` make your session interactive, instead of
     spawning the container in the background (background instantiation
@@ -41,6 +42,25 @@ Please remember that when you exit, everything done outside the
 virtual `/home/docker/src/` directory will be lost. At the same time,
 whatever happens in `/home/docker/src/` will be reflected in the
 directory from where you ran the above command.
+
+## Windows Users
+
+If you are using Windows 10 Home Edition (or similar), you might need
+[Docker Toolbox](https://docs.docker.com/toolbox/overview/), otherwise
+[Docker Desktop for
+Windows](https://docs.docker.com/docker-for-windows/) should work for
+you.
+
+Windows users using PowerShell (rather than Git BASH), should execute
+the following command instead:
+
+```
+docker run `
+  --interactive --tty --rm `
+  --volume "${PWD}:/home/docker/src/" `
+  --workdir "/home/docker/src/" `
+  portoleks/in5570v20:latest
+```
 
 ## Tools for working with the Docker image
 
