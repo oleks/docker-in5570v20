@@ -37,3 +37,11 @@ Please remember that when you exit, everything done outside the
 virtual `/home/docker/src/` directory will be lost. At the same time,
 whatever happens in `/home/docker/src/` will be reflected in the
 directory from where you ran the above command.
+
+## Tools for working with the Docker image
+
+That command was quite a mouthful!
+
+This is why we provide some tools for working with the Docker image.
+
+You will find them here: https://github.com/emerald/in5570v20
