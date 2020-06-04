@@ -5,6 +5,7 @@ ARG username=docker
 MAINTAINER Oleks <oleks@oleks.info>
 
 COPY emerald-0.99-linux.tar.gz /home/docker/
+COPY .bashrc /home/docker
 
 RUN \
   tar xvf emerald-0.99-linux.tar.gz && \
@@ -18,8 +19,8 @@ USER root
 RUN apt-get -y update && \
   apt-get install -y build-essential && \
   apt-get clean
-USER $username
 
-COPY .bashrc /home/docker
+RUN chown -R docker:docker /home/docker
+USER $username
 
 CMD ["bash"]
